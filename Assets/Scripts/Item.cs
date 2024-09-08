@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerPellet : Collectible
+public class Item : Collectible
 {
     public float duration = 8.0f;
     public string name;
