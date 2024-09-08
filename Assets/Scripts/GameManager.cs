@@ -54,8 +54,7 @@ public class GameManager : MonoBehaviour
         //if Game Running + UI
         else
         {
-            roundsUI.SetText("Round 1");
-            //roundsUI.SetText("Round " + Mathf.Abs(rounds - 4).ToString());
+            roundsUI.SetText("Round " + Mathf.Abs(rounds - 4).ToString());
         }
         livesUI.SetText("x " + this.lives.ToString());
         scoreUI.SetText(": " + this.score.ToString());
@@ -72,7 +71,7 @@ public class GameManager : MonoBehaviour
         gameStatus.SetText("Game Stats");
         SetScore(0);
         SetLives(2);
-        rounds = 1;
+        rounds = 3;
         NewRound();
     }
 
